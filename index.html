@@ -1,0 +1,425 @@
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#fff0f4">
+<title>Un lugarcito para ti ♡</title>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --rosa: #e89bb3;
+  --rosa-oscuro: #b95d80;
+  --crema: #fff8f5;
+  --texto: #704b5b;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: Georgia, "Times New Roman", serif;
+  color: var(--texto);
+  background:
+    radial-gradient(ellipse at top, #fffdfc, transparent 65%),
+    linear-gradient(160deg, #ffeaf1, #fff5ed, #f8e9f5);
+  text-align: center;
+  overflow-x: hidden;
+}
+
+button {
+  font: inherit;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.petalo {
+  position: fixed;
+  top: -30px;
+  z-index: 0;
+  pointer-events: none;
+  animation: caer linear infinite;
+  opacity: .55;
+}
+
+@keyframes caer {
+  to {
+    transform: translateY(110vh) rotate(420deg);
+  }
+}
+
+main {
+  position: relative;
+  z-index: 1;
+  width: min(100% - 28px, 620px);
+  margin: auto;
+  padding: 38px 0 45px;
+}
+
+.rosas {
+  color: #c56d8d;
+  font-size: 27px;
+  letter-spacing: 7px;
+}
+
+.sello {
+  display: inline-block;
+  margin: 13px 0;
+  padding: 8px 15px;
+  border: 1px solid #eac0cf;
+  border-radius: 30px;
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  background: #ffffff8a;
+}
+
+h1 {
+  font-size: clamp(35px, 9vw, 57px);
+  line-height: 1.12;
+  font-weight: normal;
+  margin: 14px 0;
+  color: #a95074;
+}
+
+h2 {
+  font-size: 27px;
+  font-weight: normal;
+  color: #a95074;
+}
+
+p {
+  line-height: 1.85;
+  font-size: 16px;
+}
+
+.subtitulo {
+  max-width: 430px;
+  margin: 15px auto 25px;
+}
+
+.boton {
+  display: inline-block;
+  padding: 13px 21px;
+  margin: 6px;
+  border: 1px solid #d995ae;
+  border-radius: 28px;
+  background: #c56d8d;
+  color: white;
+  box-shadow: 0 5px 15px #b95d8020;
+  transition: transform .2s;
+}
+
+.boton:active {
+  transform: scale(.97);
+}
+
+.boton.claro {
+  color: #a95074;
+  background: #fffaf9;
+}
+
+.seccion {
+  margin: 26px 0;
+  padding: 23px 19px;
+  border: 1px solid #efd1dc;
+  border-radius: 23px;
+  background: #ffffffa6;
+  box-shadow: 0 9px 30px #a9507410;
+}
+
+.seccion h2 {
+  margin-top: 3px;
+}
+
+.icono {
+  font-size: 34px;
+}
+
+.oculto {
+  display: none !important;
+}
+
+.carta {
+  margin-top: 18px;
+  padding: 22px 17px;
+  border: 1px dashed #dca1b7;
+  border-radius: 17px;
+  background: #fffaf7;
+  text-align: left;
+  animation: aparecer .5s ease;
+}
+
+.carta p {
+  white-space: normal;
+}
+
+.firma {
+  text-align: center;
+  color: #b95d80;
+  font-style: italic;
+}
+
+@keyframes aparecer {
+  from {
+    opacity: 0;
+    transform: translateY(9px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.sobres {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+}
+
+.sobre {
+  width: 100%;
+  padding: 17px 12px;
+  border: 1px solid #efc6d5;
+  border-radius: 16px;
+  color: #94516d;
+  background: #fff8fa;
+  text-align: left;
+}
+
+.sobre strong {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.mensaje {
+  margin-top: 13px;
+  padding: 17px;
+  border-radius: 15px;
+  background: #fff0f5;
+  line-height: 1.8;
+  animation: aparecer .4s ease;
+}
+
+.puente {
+  margin: 22px 0;
+  padding: 24px 12px;
+  border-radius: 20px;
+  background: linear-gradient(180deg, #383453, #76617e, #d99ab1);
+  color: #fff5fa;
+}
+
+.puente h2 {
+  color: #ffe5ef;
+}
+
+.puente p {
+  color: #fff6fa;
+}
+
+.pie {
+  margin-top: 30px;
+  font-size: 13px;
+  opacity: .8;
+}
+
+button:focus-visible {
+  outline: 3px solid #a95074;
+  outline-offset: 3px;
+}
+</style>
+</head>
+
+<body>
+
+<main>
+  <div class="rosas">✿ ❀ ✿</div>
+  <div class="sello">Un regalo hecho con amor</div>
+
+  <h1>Un lugarcito<br>para ti ♡</h1>
+
+  <p class="subtitulo">
+    Para esos días en los que el corazón necesita
+    un poquito de calma, cariño y palabras bonitas.
+  </p>
+
+  <div style="font-size:48px;margin:18px 0">
+    🌷 🕯️ 🌷
+  </div>
+
+  <p>
+    Hola, mi amor.<br>
+    Preparé algo pequeñito, pero muy especial para ti.
+  </p>
+
+  <button class="boton" onclick="mostrarCarta()">
+    Abrir mi cartita 💌
+  </button>
+
+  <section id="carta" class="seccion oculto">
+    <div class="icono">💌</div>
+    <h2>Para mi niña</h2>
+
+    <div class="carta">
+      <p>Mi amor, si estás leyendo esta cartita, quiero que por un momentito dejes de lado todo lo que te está haciendo sentir mal y leas estas palabras con calma.</p>
+
+      <p>No sé exactamente cuánto te está pesando el día de hoy, ni puedo prometerte que todos tus problemas van a desaparecer de un momento a otro, pero sí quiero recordarte algo: no tienes que estar bien todo el tiempo, no tienes que fingir una sonrisa cuando por dentro te sientes cansada y tampoco tienes que guardar todo lo que sientes para ti solita.</p>
+
+      <p>Amor mío, eres una personita muy importante para mí. No quiero que sientas que debes esconder tus días tristes para que yo pueda quererte. También mereces cariño en esos días en los que no tienes ganas de hacer nada, en los que necesitas silencio o simplemente un poquito de compañía.</p>
+
+      <p>Si hoy el mundo se siente demasiado pesado, ve despacito, mi vida. No tienes que resolverlo todo esta noche. Permítete descansar, respirar y darte un poquito de paciencia. Si algún día necesitas hablar, desahogarte o simplemente distraerte un rato, puedes decírmelo. Quiero escucharte sin juzgarte y acompañarte con cariño.</p>
+
+      <p>Ojalá pudiera regalarte un pequeño jardín donde las preocupaciones se quedaran afuera por un ratito, donde las flores nunca perdieran su color y donde pudieras encontrar tranquilidad cada vez que lo necesitaras. Como no puedo entregarte un lugar así en persona, quise crear este pequeño detalle para ti.</p>
+
+      <p>Gracias por existir, mi amor. Gracias por permitirme formar parte de tu vida. No olvides que eres mucho más que un día difícil y que mereces momentos bonitos, tranquilidad y personas que te traten con cariño.</p>
+
+      <p>Te amo muchísimo, y hoy no quiero pedirte que sonrías por mí. Solo quiero que recuerdes que eres importante, que tus sentimientos importan y que no necesitas ser fuerte a cada segundo.</p>
+
+      <p class="firma">
+        Con todo mi amor, para ti.<br>
+        Hoy y en esos días en los que necesites
+        volver a leer estas palabras. ♡
+      </p>
+    </div>
+  </section>
+
+  <section class="seccion">
+    <div class="icono">🌸</div>
+    <h2>Unos sobrecitos para ti</h2>
+    <p>
+      Elige el que necesites leer hoy.
+      Cada uno guarda unas palabritas para ti.
+    </p>
+
+    <div class="sobres">
+      <button class="sobre" onclick="abrirSobre(0)">
+        <strong>🌧️ Cuando tengas un día difícil</strong>
+        Para esos momentos en los que todo parece demasiado.
+      </button>
+
+      <button class="sobre" onclick="abrirSobre(1)">
+        <strong>🪞 Cuando olvides lo valiosa que eres</strong>
+        Un pequeño recordatorio para tu corazón.
+      </button>
+
+      <button class="sobre" onclick="abrirSobre(2)">
+        <strong>🌙 Cuando necesites descansar</strong>
+        No tienes que resolverlo todo ahora.
+      </button>
+
+      <button class="sobre" onclick="abrirSobre(3)">
+        <strong>💗 Cuando necesites cariño</strong>
+        Unas palabras para acompañarte.
+      </button>
+    </div>
+
+    <div id="mensaje" class="mensaje oculto" aria-live="polite"></div>
+  </section>
+
+  <section class="puente">
+    <div style="font-size:39px">🌙 ✨ 🌉 ✨</div>
+    <h2>Nos encontramos bajo las estrellas</h2>
+
+    <p>
+      Imagina un puente iluminado, un cielo lleno
+      de estrellas y un lugar donde puedes dejar
+      descansar tus preocupaciones por un ratito.
+    </p>
+
+    <button class="boton claro" onclick="sorpresa()">
+      Descubrir mi sorpresa ✨
+    </button>
+
+    <div id="final" class="oculto">
+      <div style="font-size:38px;margin-top:18px">🌷💗🌷</div>
+      <h2>Una última cosita...</h2>
+      <p>
+        Mi amor, no puedo prometerte que todos los días
+        serán fáciles, pero deseo que encuentres
+        tranquilidad, personas que te escuchen y muchos
+        motivos para volver a ilusionarte con las cosas bonitas.
+      </p>
+      <p>
+        Gracias por ser tú, con tus días buenos y tus días
+        difíciles. No tienes que demostrarme nada para
+        merecer cariño.
+      </p>
+      <p style="font-size:22px">Te amo muchísimo. ♡</p>
+    </div>
+  </section>
+
+  <div class="rosas">❀ ♡ ❀</div>
+  <p class="pie">
+    Hecho con mucho cariño, especialmente para ti.<br>
+    Una pequeña sorpresa que puedes volver a abrir cuando quieras.
+  </p>
+</main>
+
+<script>
+function mostrarCarta() {
+  const carta = document.getElementById("carta");
+  carta.classList.toggle("oculto");
+
+  if (!carta.classList.contains("oculto")) {
+    setTimeout(() => {
+      carta.scrollIntoView({
+        behavior: "smooth",
+        block: "start"
+      });
+    }, 100);
+  }
+}
+
+const mensajes = [
+  "Mi amor, respira despacito. No tienes que solucionar todo ahora mismo. Está bien sentirte cansada y tomarte un descanso. Ojalá estas palabras te recuerden que mereces paciencia, tranquilidad y cariño. Ve un paso a la vez. ♡",
+
+  "Quiero que recuerdes que tu valor no depende de cómo te fue hoy, de lo que otras personas piensen ni de cuánto lograste hacer. Eres una persona que merece respeto, comprensión y cosas bonitas. No seas tan dura contigo misma, mi vida. 🌷",
+
+  "Por hoy, date permiso de ir más despacio. Puedes descansar, escuchar tu música favorita o hacer algo que te dé un poquito de paz. No necesitas tener todas las respuestas esta noche. Mañana podrás volver a intentarlo, a tu ritmo. 🌙",
+
+  "Si pudiera enviarte un poquito de tranquilidad en una cajita, la llenaría de flores, palabras bonitas y recordatorios de cuánto importas. No tienes que fingir conmigo. Si quieres hablar, te escucho; si necesitas un ratito para ti, también lo respeto. Te mando todo mi cariño. 💗"
+];
+
+function abrirSobre(numero) {
+  const caja = document.getElementById("mensaje");
+  caja.textContent = mensajes[numero];
+  caja.classList.remove("oculto");
+
+  caja.scrollIntoView({
+    behavior: "smooth",
+    block: "nearest"
+  });
+}
+
+function sorpresa() {
+  const final = document.getElementById("final");
+  final.classList.remove("oculto");
+
+  document.querySelector(".puente").scrollIntoView({
+    behavior: "smooth",
+    block: "start"
+  });
+}
+
+const flores = ["🌸", "🌷", "♡", "✿"];
+
+for (let i = 0; i < 13; i++) {
+  const petalo = document.createElement("span");
+  petalo.className = "petalo";
+  petalo.textContent = flores[i % flores.length];
+  petalo.style.left = Math.random() * 100 + "vw";
+  petalo.style.animationDuration = (8 + Math.random() * 12) + "s";
+  petalo.style.animationDelay = (-Math.random() * 18) + "s";
+  petalo.style.fontSize = (13 + Math.random() * 13) + "px";
+  document.body.appendChild(petalo);
+}
+</script>
+
+</body>
+  </html>
+  
